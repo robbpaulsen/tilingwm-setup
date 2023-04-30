@@ -1,6 +1,6 @@
 #! /bin/sh
 
-. /home/ozymandias/.screenlayout/screen-layout.sh &
+. $HOME/.config/tiling-wm/bin/screen-layout.sh &
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
@@ -16,7 +16,7 @@ picom &
 # picom --experimental-back-end		&
 
 # Polybar
-. /home/ozymandias/.config/polybar/launch.sh
+. $HOME/.config/tiling-wm/bar/launch.sh
 
 # Cursor
 xsetroot -cursor_name left_ptr &

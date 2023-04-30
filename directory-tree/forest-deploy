@@ -2,8 +2,9 @@
 
 # Simple bash script to quickly create the neeede directories to move, copy and/or erase the conf and rc files
 
-mkdir -p .local/{bin,share};
-mkdir -p .local/share/fonts/;
-mkdir -p .config/{bspwm,polybar,sxhkd,kitty,xinit,zsh,bash,bat,lsd,fd-find,vim,nvim,picom,feh,nitrogen,arandr,xrandr,rofi,dmenu};
-mkdir -p .config/bspwm/scripts/ .config/polybar/scripts/;
-mkdir -p $HOME/.screenlayout/;
+mkdir -p $HOME/.local/{bin,share} &&
+mkdir -p $HOME/.local/share/fonts/ &&
+mkdir -p $HOME/.config/{bat,lsd,fd-find,vim,nvim,feh,nitrogen,rofi,dmenu} &&
+mkdir -p $HOME/.config/tiling-wm/{bar,wm,compositor,bin} &&
+
+# Destination of all the modules and scripts for polybar, rofi and sxhkd scripts triggered keyboard shortcuts $HOME/.config/tiling-wm/bin/
