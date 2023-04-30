@@ -472,3 +472,14 @@ export PATH="$PATH:/home/ozymandias/.local/bin"
 fpath+=~/.zfunc
 
 source ~/.zprofile
+
+# My custom functions
+function settarget(){
+    ip_address=$1
+    target_name=$2
+    echo "$ip_address $target_name" > /home/ozymandias/.config/tiling-wm/bin/target
+}
+
+function cleartarget(){
+	echo '' > /home/ozymandias/.config/tiling-wm/bin/target
+}

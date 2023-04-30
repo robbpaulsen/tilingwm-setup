@@ -351,5 +351,18 @@ neofetch
 #sysinfo-retro
 #cpufetch
 #colorscript random
+
 source '/home/ozymandias/.nvm/versions/node/v18.15.0/lib/node_modules/@hyperupcall/autoenv/activate.sh'
+
 . "$HOME/.cargo/env"
+
+# My custom functions
+function settarget(){
+    ip_address=$1
+    target_name=$2
+    echo "$ip_address $target_name" > /home/ozymandias/.config/tiling-wm/bin/target
+}
+
+function cleartarget(){
+	echo '' > /home/ozymandias/.config/tiling-wm/bin/target
+}
