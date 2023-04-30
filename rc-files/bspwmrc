@@ -11,18 +11,18 @@ nitrogen --restore --set-zoom-fill &
 ## feh --bg-fill /absolute/path/to/wallpaper &
 
 # Transparency and blur effects daemon
-picom --config=/home/ozymandias/.config/picom/picom.conf &
+picom &
 # picom --config=/home/ozymandias/.config/picom/picom-noeffects.conf &
 # picom --experimental-back-end		&
 
 # Polybar
-. /home/ozymandias/.config/polybar/launch.sh &
+. /home/ozymandias/.config/polybar/launch.sh
 
 # Cursor
 xsetroot -cursor_name left_ptr &
 
 # Windows Settings
-bspc config border_width 2
+bspc config border_width 4
 bspc config window_gap 12
 bspc config top_padding 8
 bspc config bottom_padding 8
