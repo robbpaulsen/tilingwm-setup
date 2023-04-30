@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Simple bash script to quickly create the neeede directories to move, copy and/or erase the conf and rc files
+
+mkdir -p .local/{bin,share};
+mkdir -p .local/share/fonts/;
+mkdir -p .config/{bspwm,polybar,sxhkd,kitty,xinit,zsh,bash,bat,lsd,fd-find,vim,nvim,picom,feh,nitrogen,arandr,xrandr,rofi,dmenu};
+mkdir -p .config/bspwm/scripts/ .config/polybar/scripts/;
+mkdir -p $HOME/.screenlayout/;
