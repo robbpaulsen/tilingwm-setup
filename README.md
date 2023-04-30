@@ -1,0 +1,3 @@
+# Tiling Window Manager Setup, NOT INSTALLATION
+
+## For this project my only goal is to quickly place all the conf files for BSPWM on any linux distribution, so will not be playing around with pkg managers, etc. If you like this project just please read the code carefully and have everything already installed on the machine, since this project will only poopulate conf files and replace general RC files with my already customized ones. The whole process will be segmented on 3 parts, first creating directory tree layout in case it's none existent, after that will "ERASE" not backing up the `bashrc, zshrc, nano.rc, xinitrc, bspwmrc` among other files, so back up if needed and to finish It'll try to update the system distro agnostic kind of.
