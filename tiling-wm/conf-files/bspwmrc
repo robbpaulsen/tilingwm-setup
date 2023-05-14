@@ -1,0 +1,47 @@
+#! /bin/sh
+
+. $HOME/.config/tiling-wm/bin &
+
+pgrep -x sxhkd >/dev/null || sxhkd &
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+# Wallpaper manager
+# nitrogen --restore --set-zoom-fill &
+## feh --bg-fill /absolute/path/to/wallpaper &
+
+# Transparency and blur effects daemon
+picom &
+# picom --config=/home/ozymandias/.config/picom/picom-noeffects.conf &
+# picom --experimental-back-end		&
+
+# Polybar
+. $HOME/.config/tiling-wm/conf-files/bar/launch.sh
+
+# Cursor
+xsetroot -cursor_name left_ptr &
+
+# Windows Settings
+bspc config border_width 4
+bspc config window_gap 12
+bspc config top_padding 8
+bspc config bottom_padding 8
+bspc config left_padding 8
+bspc config right_padding 8
+bspc config single_monocle false
+bspc config gapless_monocle false
+bspc config focus_follows_pointer true
+bspc config pointer_follows_focus true
+bspc config pointer_modifier mod4
+bspc config split_ratio 0.50
+
+# Windows Border Settings
+bspc config focused_border_color "#24BEB0"
+bspc config normal_border_color "#5D6ADE"
+bspc config active_border_color "#5D1CE6"
+
+#bspc rule -a Gimp desktop='^8' state=floating follow=on
+#bspc rule -a Chromium desktop='^2'
+#bspc rule -a mplayer2 state=floating
+#bspc rule -a Kupfer.py focus=on
+#bspc rule -a Screenkey manage=off
