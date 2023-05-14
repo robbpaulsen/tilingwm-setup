@@ -1,0 +1,17 @@
+git
+wget
+curl
+rofi
+dmenu
+sxhkd
+polybar
+picom
+bspwm
+nitrogen
+arandr
+kitty
+thunar-extended
+firefox-esr
+neovim
+vim
+gnome-terminal
